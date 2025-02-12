@@ -24,7 +24,7 @@ const data = [
         id: 3,
         image: IMG3,
         title: `Qwarqo web application - a website that allows users to seek for rentals at the comfort of their 
-        homes. Perfomed pen-testing and vulnerability assessments to improve its web security.`,
+        homes. Releases one from the shackles of endless movement in search of a rental. Try it today!!`,
         github: '#',
         demo: 'https://qwarqo.com',
     }
