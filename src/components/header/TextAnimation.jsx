@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
-const texts = ["Front-End Dev", "Back-End Dev"];
+const texts = ["Web Developer", "Mobile App Dev"];
 
 const TextAnimation = () => {
   const [index, setIndex] = useState(0); // Track the current word in the texts array
