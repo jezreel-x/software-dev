@@ -1,10 +1,9 @@
-import React from 'react'
-import './portfolio.css'
-import IMG1 from '../../assets/portfolio-photo.png'
-import IMG2 from '../../assets/portfolio-photo(2).png'
-import IMG3 from '../../assets/portfolio-photo(3).png'
+import React from 'react';
+import './portfolio.css';
+import IMG1 from '../../assets/portfolio-photo.png';
+import IMG2 from '../../assets/portfolio-photo(2).png';
+import IMG3 from '../../assets/portfolio-photo(3).png';
 
-//Do not use the images in production
 const data = [
     {
         id: 1,
@@ -18,7 +17,7 @@ const data = [
         image: IMG2,
         title: 'My Personal Portfolio Website uses React and is deployed on Netlify.',
         github: 'https://github.com/jezreel-x',
-        demo: 'https://cybersec-portfolio.netlify.app/',
+        demo: 'https://mutosh-software.netlify.app/',
     },
     {
         id: 3,

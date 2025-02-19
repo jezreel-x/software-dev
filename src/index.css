@@ -104,13 +104,30 @@ a:hover {
     transition: var(--transition);
 }
 
+.button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.button.hovered {
+    background-color: red;
+    transform: scale(1.1);
+}
+
 .btn:hover {
     background: var(--color-white);
     color: var(--color-bg);
     border-color: transparent;
 }
 
-.btn-primary {
+.btn.btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
 }

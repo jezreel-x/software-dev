@@ -1,15 +1,31 @@
-import React from 'react';
+// import React, { useEffect, useState } from 'react';
 import './header.css';
 import CVSection from './CVSection';
 import TextAnimation from './TextAnimation';
 
+const Header = () => {
 
+    /*
+    const [width, setWidth] = useState(window.innerWidth);
 
-const header = () => {
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, []);
+    */
+
     return (
         <header>
             <div className="container header__container">
                 <h5>Hello there...</h5>
+                {/* <p>{width}px</p> */}
                 <h1>Mutonga Romeo</h1>
                 <TextAnimation />
                 <CVSection />
@@ -20,4 +36,4 @@ const header = () => {
     )
 };
 
-export default header;
+export default Header;

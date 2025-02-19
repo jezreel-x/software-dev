@@ -9,7 +9,7 @@
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    transition: var(--transition);
+    transition: var(--transition); /* all 400ms ease */
 }
 
 .portfolio__item:hover {
@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 
-.portfolio__item h3 {
+.portfolio__item > h3 {
     margin: 1.2rem 0 2rem;
 }
 
@@ -32,7 +32,7 @@
     margin-bottom: 1rem;
 }
 
-/* ================== Media Queries (Medium Devices ==============*/
+/* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
