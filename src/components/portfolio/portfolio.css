@@ -4,6 +4,11 @@
     gap: 2.5rem;
 }
 
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-white);
+    margin-top: 3px;
+}
+
 .portfolio__item {
     background: var(--color-bg-variant);
     padding: 1.3rem;

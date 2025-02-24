@@ -1,32 +1,94 @@
 import React from 'react';
 import './portfolio.css';
+// import '../testimonials/testimonials.css';
+
+
 import IMG1 from '../../assets/portfolio-photo.png';
 import IMG2 from '../../assets/portfolio-photo(2).png';
-import IMG3 from '../../assets/portfolio-photo(3).png';
+// import IMG3 from '../../assets/portfolio-photo(3).png';
+import IMG4 from '../../assets/portfolio-photo(4).jpg';
+import IMG5 from '../../assets/portfolio-photo(5).jpg';
+import IMG6 from '../../assets/portfolio-photo(6).jpg';
+import IMG7 from '../../assets/portfolio-photo(7).jpg';
+import IMG8 from '../../assets/portfolio-photo(8).jpg';
+import IMG9 from '../../assets/portfolio-photo(9).png';
+import IMG10 from '../../assets/portfolio-photo(10).png';
+import IMG11 from '../../assets/portfolio-photo(11).png';
+import IMG12 from '../../assets/portfolio-photo(19).png';
+import IMG13 from '../../assets/portfolio-photo(20).png';
+import IMG14 from '../../assets/portfolio-photo(21).png';
+import IMG15 from '../../assets/portfolio-photo(22).png';
+import IMG16 from '../../assets/portfolio-photo(12).png';
+import IMG17 from '../../assets/portfolio-photo(13).png';
+import IMG18 from '../../assets/portfolio-photo(14).png';
+import IMG19 from '../../assets/portfolio-photo(15).png';
+import IMG20 from '../../assets/portfolio-photo(16).png';
+import IMG21 from '../../assets/portfolio-photo(17).png';
+import IMG22 from '../../assets/portfolio-photo(18).png';
+
+
+
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 const data = [
     {
         id: 1,
-        image: IMG1,
+        image: [IMG1, IMG9],
         title: 'Utilized React to develop an expense tracker system, to keep track of expense against a specified budget - hosted on Github.',
         github: 'https://github.com/jezreel-x',
         demo: 'https://expense-ui.netlify.app/',
     },
     {
         id: 2,
-        image: IMG2,
+        image: [IMG2, IMG11, IMG10],
         title: 'My Personal Portfolio Website uses React and is deployed on Netlify.',
         github: 'https://github.com/jezreel-x',
         demo: 'https://mutosh-software.netlify.app/',
     },
+    /*
     {
         id: 3,
         image: IMG3,
         title: `Qwarqo web application - a website that allows users to seek for rentals at the comfort of their 
         homes. Releases one from the shackles of endless movement in search of a rental. Try it today!!`,
         github: '#',
-        demo: 'https://qwarqo.com',
+        demo: '#',
+    },
+    */
+    {
+        id: 4,
+        image: [IMG12, IMG13, IMG14, IMG15],
+        title: `AirHousing Web App - Developed and maintained a web app for a real estate start-up using
+        Laravel, TailwindCSS, PHP, REST API - to allow users to digitally search for rentals and houses. Still in development
+        process.`,
+        github: 'https://github.com/jezreel-x',
+        demo: '#',
+    },
+    {
+        id: 5,
+        image: [IMG16, IMG17, IMG18, IMG19, IMG20, IMG21, IMG22],
+        title: `Gas Delivery Management System - Developed and maintained a gas delivery web app using
+        Bootstrap, PHP - that allows users to order and purchase gas cylinders. Still in development
+        process.`,
+        github: 'https://github.com/jezreel-x',
+        demo: '#',
+    },
+    {
+        id: 6,
+        image: [IMG4, IMG5, IMG6, IMG7, IMG8],
+        title: `AirHousing Mobile App - Developed and maintained a mobile app for a real estate start-up using
+        JSX, React, React Native, to allow users to digitally search for rentals and houses. Still in development
+        on Expo Go.`,
+        github: 'https://github.com/jezreel-x',
+        demo: '#',
     }
+    
+
 ]
 
 
@@ -41,9 +103,39 @@ const Portfolio = () => {
                     data.map(({ id, image, title, github, demo }) => {
                         return (
                             <article key={id} className='portfolio__item'>
+                                {/*
                                 <div className="portfolio__item-image">
                                     <img src={image} alt={title} />
                                 </div>
+                                */}
+                                {/* Swiper for Project Images */}
+                                <Swiper
+                                    style={{
+                                        width: '100%',
+                                        maxWidth: '250px',
+                                        height: 'auto',
+                                        objectFit: 'cover',
+                                        borderRadius: '10px',
+                                        backgroundColor: 'transparent'
+                                    }}
+                                    modules={[Pagination]}
+                                    spaceBetween={20}
+                                    slidesPerView={1}
+                                    pagination={{ clickable: true }}
+                                    
+                                >
+                                    {image.map((image, index) => (
+                                        <SwiperSlide key={index}>
+                                            <div className="portfolio__item-image">
+                                                <img 
+                                                src={image} 
+                                                alt='#'
+                                                />
+                                            </div>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                               
                                 <h3>{title}</h3>
                                 <div className="portfolio__item-cta">
                                     <a href={github} className='btn' target='blank'>Github</a>
@@ -58,4 +150,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Portfolio;
