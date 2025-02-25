@@ -11,15 +11,19 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_s40ojcs', 'template_eh9sppo', form.current, 'Kg2rhkR8J5TfgshRJ')
+        emailjs.sendForm('service_pwvimxl', 'template_830gv3p', form.current, 'zbPQQCWghLI5VIPvO')
 
-        e.target.reset()
+        .then(
+            (result) => {
+                console.log("Email sent successfully: ", result.text);
+                alert("Message sent successfully!");
+            }, 
+            (error) => {
+                console.log("Error sending e-mail: ", error.text);
+            }
+        );
 
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        e.target.reset() // Reset form fields after submission
     };
 
     return (
@@ -46,9 +50,9 @@ const Contact = () => {
                 {/* End of contact options */}
 
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='Enter your name...' required />
-                    <input type="email" name='email' placeholder='example@example.com' required />
-                    <textarea name='message' rows="7" placeholder='Hi Mutonga, I have a question...' required></textarea>
+                    <input type="text" name='user_name' placeholder='Enter your name...' required />
+                    <input type="email" name='user_email' placeholder='Email...' required />
+                    <textarea name='message' rows="7" placeholder='Send a message...' required></textarea>
                     <button type='submit' className='btn btn-primary'>Send Message</button>
                 </form>
             </div>
