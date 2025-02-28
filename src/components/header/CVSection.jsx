@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/MUTONGA-CV.pdf'
+// import CV from '../../assets/MUTONGA-CV.pdf'
 
 const CVSection = () => {
 
@@ -8,8 +8,10 @@ const CVSection = () => {
     return (
         <div>
             <div className='cta'>
+                {/*
                 <a href={CV} download className='btn'>
                     Download CV</a>
+                */}
                 <a href="#contact" className='btn btn-primary'>Contact for more info</a>
                 {/*
                 <div className="flex justify-center items-center h-screen bg-gray-100">

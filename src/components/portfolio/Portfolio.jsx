@@ -116,10 +116,11 @@ const Portfolio = () => {
                                         height: 'auto',
                                         objectFit: 'cover',
                                         borderRadius: '10px',
-                                        backgroundColor: 'transparent'
+                                        backgroundColor: 'transparent',
+                                        paddingBottom: '2px'
                                     }}
                                     modules={[Pagination]}
-                                    spaceBetween={20}
+                                    spaceBetween={40}
                                     slidesPerView={1}
                                     pagination={{ clickable: true }}
                                     

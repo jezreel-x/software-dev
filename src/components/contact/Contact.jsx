@@ -6,6 +6,24 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+    const data = [
+        {
+            id: 1,
+            icon: <HiOutlineMail className='contact__option-icon' />,
+            title: `Email`,
+            text: `romeomutonga3@gmail.com`,
+            socialMediaPlatform: `mailto:romeomutonga3@gmail.com`
+        }, 
+        {
+            id: 2,
+            icon: <TbBrandLinkedin className='contact__option-icon' />,
+            title: `LinkedIn`,
+            text: `Romeo Mutonga`,
+            socialMediaPlatform: `https://www.linkedin.com/in/romeo-mutonga-31a5761ba/`
+        }
+    ];
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -20,6 +38,7 @@ const Contact = () => {
             }, 
             (error) => {
                 console.log("Error sending e-mail: ", error.text);
+                alert("Failed to send message");
             }
         );
 
@@ -33,19 +52,34 @@ const Contact = () => {
 
             <div className="container contact__container">
                 <div className="contact__options">
+                    {/*
                     <article className="contact__option">
                         <HiOutlineMail className='contact__option-icon' />
                         <h4>Email</h4>
                         <h5>romeomutonga3@gmail.com</h5>
-                        <a href="mailto:romeomutonga3@gmail.com" target="blank">Send a message</a>
+                        <a href={} target="blank">Send a message</a>
                     </article>
 
                     <article className="contact__option">
                         <TbBrandLinkedin className='contact__option-icon' />
                         <h4>Linkedin</h4>
                         <h5>Romeo Mutonga</h5>
-                        <a href="https://www.linkedin.com/in/romeo-mutonga-31a5761ba/" target="blank">Send a message</a>
+                        <a href={} target="blank">Send a message</a>
                     </article>
+                    */}
+
+                    {
+                        data.map(({id, icon, title, text, socialMediaPlatform}) => {
+                            return (
+                                <article key={id} className='contact__option'>
+                                    {icon}
+                                    <h4>{title}</h4>
+                                    <h5>{text}</h5>
+                                    <a href={socialMediaPlatform} target="blank" rel="noopener noreferrer">Send Message</a>
+                                </article>
+                            )
+                        })
+                    }
                 </div>
                 {/* End of contact options */}
 

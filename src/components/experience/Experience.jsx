@@ -101,7 +101,7 @@ const Experience = () => {
                         <article className='experience__details'>
                             <BsPatchCheckFill className='experience__details-icon' />
                             <div>
-                                <h4>CMS: Wordpress</h4>
+                                <h4>CMS: Wordpress | Drupal</h4>
                                 <small className='text-light'>Advanced</small>
                             </div>
                         </article>
@@ -125,10 +125,19 @@ const Experience = () => {
                         <article className='experience__details'>
                             <BsPatchCheckFill className='experience__details-icon' />
                             <div>
+                                <h4>Docker & Containerization</h4>
+                                <small className='text-light'>Intermediate</small>
+                            </div>
+                        </article>
+
+                        <article className='experience__details'>
+                            <BsPatchCheckFill className='experience__details-icon' />
+                            <div>
                                 <h4>Agile Development Methodologies such as Scrum</h4>
                                 <small className='text-light'>Intermediate</small>
                             </div>
                         </article>
+
                     </div>
                 </div>
             </div>
