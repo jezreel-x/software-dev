@@ -45,10 +45,7 @@
     
     .experience__container {
         grid-template-columns: 1fr; 
-        /*
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 2 rem;
-        */
+        /* grid-template-columns: repeat(2, 1fr); */
     }
     
 
@@ -78,7 +75,7 @@
     }
 
     .experience__container > div {
-        margin: 0 auto;
+        width: 100%;
         padding: 2rem 1rem;
     }
 }
