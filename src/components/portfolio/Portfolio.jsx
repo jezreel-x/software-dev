@@ -25,6 +25,10 @@ import IMG19 from '../../assets/portfolio-photo(15).png';
 import IMG20 from '../../assets/portfolio-photo(16).png';
 import IMG21 from '../../assets/portfolio-photo(17).png';
 import IMG22 from '../../assets/portfolio-photo(18).png';
+import IMG23 from '../../assets/portfolio-photo(23).png';
+import IMG24 from '../../assets/portfolio-photo(24).png';
+import IMG25 from '../../assets/portfolio-photo(25).png';
+
 
 
 
@@ -62,8 +66,8 @@ const data = [
     */
     {
         id: 4,
-        image: [IMG12, IMG13, IMG14, IMG15],
-        title: `AirHousing Web App - Developed and maintained a web app for a real estate start-up using
+        image: [IMG12, IMG13, IMG23, IMG24, IMG25, IMG14, IMG15],
+        title: `AirHousing Real Estate Property Management App - Developed and maintained a web app for a real estate start-up using
         Laravel, TailwindCSS, PHP, REST API - to allow users to digitally search for rentals and houses. Still in development
         process.`,
         github: 'https://github.com/jezreel-x',

@@ -45,12 +45,12 @@
     
     .experience__container {
         /* grid-template-columns: 1fr; */
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
     
 
     .experience__container > div {
-        /* width: 80%; */
+        width: 100%; 
         padding: 2rem;
         margin: 0 auto;
     }
