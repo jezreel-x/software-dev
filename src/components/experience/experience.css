@@ -26,8 +26,8 @@
 
 .experience__content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr 0.75fr;
+    row-gap: 1rem;
 }
 
 .experience__details {
