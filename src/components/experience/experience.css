@@ -71,11 +71,12 @@
 @media screen and (max-width: 600px) {
     .experience__container {
         gap: 1rem;
+        width: 90%;
+        margin: auto;
     }
 
     .experience__container > div {
         width: 90%;
-        margin: auto;
         padding: 2rem 1rem;
     }
 }
