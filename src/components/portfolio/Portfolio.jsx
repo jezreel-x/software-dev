@@ -28,6 +28,9 @@ import IMG22 from '../../assets/portfolio-photo(18).png';
 import IMG23 from '../../assets/portfolio-photo(23).png';
 import IMG24 from '../../assets/portfolio-photo(24).png';
 import IMG25 from '../../assets/portfolio-photo(25).png';
+import IMG26 from '../../assets/portfolio-photo(26).png';
+import IMG27 from '../../assets/portfolio-photo(27).png';
+import IMG28 from '../../assets/portfolio-photo(28).png';
 
 
 
@@ -43,7 +46,8 @@ const data = [
     {
         id: 1,
         image: [IMG1, IMG9],
-        title: 'Utilized React to develop an expense tracker system, to keep track of expense against a specified budget - hosted on Github.',
+        title: `Utilized React to develop an financial tracker system.
+        Its main purpose is to assist users in keeping track of their financial expenses. - hosted on Github.`,
         github: 'https://github.com/jezreel-x',
         demo: 'https://expense-ui.netlify.app/',
     },
@@ -68,7 +72,7 @@ const data = [
         id: 4,
         image: [IMG12, IMG13, IMG23, IMG24, IMG25, IMG14, IMG15],
         title: `AirHousing Real Estate Property Management App - Developed and maintained a web app for a real estate start-up using
-        Laravel, TailwindCSS, PHP, REST API - to allow users to digitally search for rentals and houses. Still in development
+        React, Laravel, TailwindCSS, PHP, REST API - to allow users to digitally search for rentals and houses. Still in development
         process.`,
         github: 'https://github.com/jezreel-x',
         demo: '#',
@@ -88,6 +92,17 @@ const data = [
         title: `AirHousing Mobile App - Developed and maintained a mobile app for a real estate start-up using
         JSX, React, React Native, to allow users to digitally search for rentals and houses. Still in development
         on Expo Go.`,
+        github: 'https://github.com/jezreel-x',
+        demo: '#',
+    },
+    {
+        id: 7,
+        image: [IMG26, IMG27, IMG28],
+        title: `Calories Tracker App - A robust, high-performance React app that allows users to input the name of a food item or 
+        dish they've consumed, 
+        along with details on proteins, calories, fat, carbs, etc. Users can then keep track of their calorie 
+        intake and receive a warning message if their calorie limit is exceeded. The logic for inputting item data 
+        and saving results in a card format has been implemented using React JSX.`,
         github: 'https://github.com/jezreel-x',
         demo: '#',
     }
