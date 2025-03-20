@@ -104,7 +104,7 @@ const data = [
         intake and receive a warning message if their calorie limit is exceeded. The logic for inputting item data 
         and saving results in a card format has been implemented using React JSX.`,
         github: 'https://github.com/jezreel-x',
-        demo: '#',
+        demo: 'https://nutrition-and-calorie-tracker.netlify.app/',
     }
     
 
