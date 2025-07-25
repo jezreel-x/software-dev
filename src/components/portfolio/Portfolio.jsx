@@ -80,11 +80,11 @@ const data = [
     {
         id: 5,
         image: [IMG16, IMG17, IMG18, IMG19, IMG20, IMG21, IMG22],
-        title: `Gas Delivery Management System - Developed and maintained a gas delivery web app using
-        Bootstrap, PHP - that allows users to order and purchase gas cylinders. Still in development
-        process.`,
-        github: 'https://github.com/jezreel-x',
-        demo: '#',
+        title: `JaGedo - Developed and maintained a one stop construction platform that seamlessly connects customers 
+        and builders to other builders: fundis, professionals, contractors, and hardware suppliers in your locality. 
+        `,
+        github: 'https://github.com/jagedos/JaGedov3-Designs/',
+        demo: 'https://uat.jagedo.co.ke/',
     },
     {
         id: 6,

@@ -44,7 +44,7 @@ const About = () => {
                     </div>
 
                     <p>
-                    Results-driven Software Engineer with 1+ year of experience in Web design and development, 
+                    Results-driven Software Engineer with 2+ years of experience in Web design and development, 
                     Mobile App Development using languages and technologies such as HTML, CSS, JavaScript, React,
                     React Native, Next,js coupled with backend technologies such as MySQL, PHP, Laravel.
                     </p>
